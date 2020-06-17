@@ -14,8 +14,11 @@ const Item = (props) => {
                             </div>
                             <div className="col-md-8">
                                 <div className="pt-4 pb-4">
-                                    <h4></h4>
-                                    <p></p>
+                                    <h4>{ props.title }</h4>
+                                    <p>{props.description}</p>
+                                    <div className="cta-wrapper">
+                                        <a className="btn cta-btn">Watch this video</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -26,3 +29,5 @@ const Item = (props) => {
         </div>
     );
 }
+
+export default Item;
